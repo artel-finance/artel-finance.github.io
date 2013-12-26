@@ -1,97 +1,133 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Артель</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style-single-page.css" rel="stylesheet">
+    <link href="font/css/fontello.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen"/>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox-thumb").fancybox({
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(1,1,1,0.65)'
+                        }
+                    }
+                }
+            });
+        });
     </script>
-    <title>Artel-finance.github.io by artel-finance</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/artel-finance">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Artel-finance.github.io</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/artel-finance">artel-finance</a> can be found on <a href="https://github.com/artel-finance">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+                class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+            <ul class="nav nav-collapse pull-right">
+                <li><a href="#profile"><i class="icon-user"></i> Главная</a></li>
+                <li><a href="#skills"><i class="icon-trophy"></i> О нас</a></li>
+                <li><a href="#resume"><i class="icon-doc-text"></i> Контакты</a></li>
+            </ul>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+            </div>
+        </div>
     </div>
+</div>
+<div class="clearfix">
+    <!--Profile container-->
+    <div id="profile" class="container">
+            <div class="span2">
+                <div class="skills" style="min-height: 800px;">
+                <div class="html">
+                    <h4 style="margin-top: 25px;'">АРТЕЛЬ</h4><h4>финанс</h4>
+                </div>
+                </div>
+            </div>
+        <div class="span6">
+            <h2 id="sloganContainer"></h2>
 
-    
-  </body>
+            <p id="introContainer"></p>
+        </div>
+        <!-- Social Icons -->
+        <!-- END: Social Icons -->
+    </div>
+    <!--END: Profile container-->
+    <!--Skills container-->
+    <div id="skills" class="container skills">
+        <h2>О нас</h2>
+        <div class="span8"><h4 id="aboutContainer"></h4></div>
+    </div>
+    <!--END: Skills container-->
+    <!-- Works container -->
+    <!--END: Work container-->
+    <!-- Resume container -->
+    <div id="resume" class="container">
+        <h2>Контакты</h2>
+
+        <h3 id="contactsContainer"></h3>
+    </div>
+    <!--END: Resume container-->
+    <!-- Social Icons -->
+    <div class="row social">
+        <ul class="social-icons">
+            <li><a href="#" target="_blank"><img src="img/fb.png" alt="facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="img/tw.png" alt="twitter"></a></li>
+            <li><a href="#" target="_blank"><img src="img/go.png" alt="google plus"></a></li>
+            <li><a href="#" target="_blank"><img src="img/pin.png" alt="pinterest"></a></li>
+            <li><a href="#" target="_blank"><img src="img/st.png" alt="stumbleupon"></a></li>
+            <li><a href="#" target="_blank"><img src="img/dr.png" alt="dribbble"></a></li>
+        </ul>
+    </div>
+    <!-- END: Social Icons -->
+</div>
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <p class="pull-right"><a href="##myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> ОБРАТНАЯ
+            СВЯЗЬ</a></p>
+    </div>
+</div>
+<!-- Contact form in Modal -->
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+    </div>
+    <div class="modal-body">
+        <form>
+            <input type="text" placeholder="Yopur Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Website (Optional)">
+            <textarea rows="3" style="width:80%"></textarea>
+            <br/>
+            <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+        </form>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="js/vertical-scroll.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('#myModal').modal('hidden')
+</script>
+<script type="text/javascript" src="js/content.js"></script>
+
+</body>
 </html>
